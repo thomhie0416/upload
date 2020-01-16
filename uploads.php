@@ -12,6 +12,7 @@
 			if (move_uploaded_file($_FILES['file']['tmp_name'],$targetFilePath)) {
 				echo $fileName;
 			}
+
 			else{
 				echo "failed to uploads";
 			}
@@ -20,8 +21,13 @@
 		else{
 			echo "File type not allowed";
 		}
+
 	}
+	else{
+			echo "No File Choosen";
+		}
 
 
 ?>
+
 
